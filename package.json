@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "vue": "^2.5.2",
+    "vue-markdown-loader": "^2.2.3",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
@@ -81,10 +82,12 @@
       "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
       ".*\\.(vue)$": "<rootDir>/node_modules/vue-jest"
     },
-    "setupFiles": ["<rootDir>/test/unit/setup"],
+    "setupFiles": [
+      "<rootDir>/test/unit/setup"
+    ],
     "mapCoverage": true,
     "coverageDirectory": "<rootDir>/test/unit/coverage",
-    "collectCoverageFrom" : [
+    "collectCoverageFrom": [
       "src/**/*.{js,vue}",
       "!src/main.js",
       "!src/router/index.js",
