@@ -3,6 +3,7 @@ const path = require('path')
 const utils = require('./utils')
 const config = require('../config')
 const vueLoaderConfig = require('./vue-loader.conf')
+const utilsMd = require('./utilsmd')
 
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
@@ -25,6 +26,7 @@ module.exports = {
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
       '@': resolve('examples'),
+      '~': resolve('src'),
     }
   },
   module: {
@@ -75,7 +77,8 @@ module.exports = {
       },
       {
         test: /\.MarkDown$|\.md$/,
-        loader: 'vue-markdown-loader'
+        loader: 'vue-markdown-loader',
+        options: utilsMd.markdownLoader()
       }
     ]
   }
