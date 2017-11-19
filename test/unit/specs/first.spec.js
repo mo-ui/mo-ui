@@ -16,7 +16,7 @@ describe('first test', () => {
     }, true);
 
     it('should render correct contents', () => {
-        expect('hello world').toEqual('hello world')
+        expect(vm.$el.innerHTML).toEqual(vm.$data.text)
     })
 
     afterEach(() => {
