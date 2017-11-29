@@ -1,0 +1,43 @@
+:root {
+    /* Transition
+    -------------------------- */
+    --all-transition: all .3s cubic-bezier(.645,.045,.355,1);
+    --fade-linear-transition: opacity 200ms linear;
+    --md-fade-transition: transform 300ms cubic-bezier(0.23, 1, 0.32, 1) 100ms, opacity 300ms cubic-bezier(0.23, 1, 0.32, 1) 100ms;
+    --border-transition-base: border-color .2s cubic-bezier(.645,.045,.355,1);
+    --color-transition-base: color .2s cubic-bezier(.645,.045,.355,1);
+    --background-color-transition-base: background-color .2s cubic-bezier(.645,.045,.355,1);
+
+    /* Colors
+    -------------------------- */
+    --color-primary: #FF7340;
+    --color-dark-primary: #FF571A;
+
+    --color-success: #1DBF6E;
+    --color-warning: #F90;
+    --color-info: #4DA6FF;
+    --color-danger: #FF4040;
+    --color-link: #007FFF;
+
+    --color-black: #000000;
+    --color-white: #FFFFFF;
+
+    --color-base-gray: #BFBFBF;
+    --color-light-gray: #D9D9D9;
+    --color-extra-light-gray: #F9F9F9;
+
+    /* Font
+    -------------------------- */
+    --font-size-base: 14px;
+
+    /* Border
+    -------------------------- */
+    --border-width-base: 1px;
+    --border-style-base: solid;
+    --border-color-base: var(--color-base-gray);
+    --border-color-hover: var(--color-dark-primary);
+    --border-base: var(--border-width-base) var(--border-style-base) var(--border-color-base);
+    --border-radius-base: 4px;
+    --border-radius-small: 2px;
+    --border-radius-circle: 100%;
+}

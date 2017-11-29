@@ -7,3 +7,8 @@ export default {
     name: 'MoButton'
 };
 </script>
+
+<style>
+@import '../../../style/index.css';
+</style>
+
