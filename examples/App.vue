@@ -30,7 +30,7 @@ export default {
 </script>
 
 <style lang="postcss">
-@import './assets/global.css';
+@reset-global pc;
 @import './App.css';
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
