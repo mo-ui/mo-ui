@@ -12,9 +12,14 @@ export default new Router({
             component: HelloWorld
         },
         {
-            path: '/test',
-            name: 'test',
-            component: r => require.ensure([], () => r(require('../docs/test.md')))
+            path: '/docs/guide',
+            name: 'guide',
+            component: r => require.ensure([], () => r(require('../components/guide.vue')))
+        },
+        {
+            path: '/docs/component',
+            name: 'component',
+            component: r => require.ensure([], () => r(require('../components/component.vue')))
         }
     ]
 })

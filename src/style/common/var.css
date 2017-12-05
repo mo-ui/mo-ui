@@ -10,8 +10,8 @@
 
     /* Colors
     -------------------------- */
-    --color-primary: #FF7340;
-    --color-dark-primary: #FF571A;
+    --color-primary: #7FCFFB;
+    --color-dark-primary: rgb(99, 167, 226);
 
     --color-success: #1DBF6E;
     --color-warning: #F90;

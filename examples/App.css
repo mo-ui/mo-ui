@@ -1,0 +1,64 @@
+@import '../src/style/common/var.css';
+
+.doc__head{
+    width: 1140px;
+    height: 80px;
+    line-height: 100px;
+    background: #FFFFFF;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .06);
+    box-sizing: border-box;
+    margin: 0px auto;
+
+    h1{
+        margin-left: 0px;
+        width: 20%;
+        height: 100%;
+        position: relative;
+
+        img{
+            width: 100px;
+            height: 50px;
+            position: absolute;
+            top: 50%;
+            transform: translate(0,-35%);
+        }
+        span{
+            margin-left: 60px;
+            font-size: 25px;
+        }
+    }
+
+    ul{
+        float: right;
+        color: #333333;
+        font-size: 18px;
+    }
+    .docs-link{
+        height: 80px;
+        padding: 0px 20px;
+        cursor: pointer;
+        float: left;
+        color: var(--color-primary);
+        box-sizing: border-box;
+
+        &:hover{
+            color: var(--color-dark-primary);
+        }
+        &--choose{
+            color: var(--color-dark-primary);
+            border-bottom: 2px solid var(--color-dark-primary);
+        }
+    }
+
+    p{
+        float: right;
+        margin-left: 30px;
+        color: var(--color-dark-primary);
+    }
+}
+
+.doc__body{
+    margin: 0px 30px;
+    min-width: 100%;
+    box-sizing: border-box;
+}
