@@ -3,7 +3,7 @@
 .doc__head{
     width: 1140px;
     height: 80px;
-    line-height: 100px;
+    line-height: 80px;
     background: #FFFFFF;
     box-shadow: 0 1px 1px rgba(0, 0, 0, .06);
     box-sizing: border-box;
@@ -58,7 +58,58 @@
 }
 
 .doc__body{
-    margin: 0px 30px;
-    min-width: 100%;
+    margin: 0px auto;
+    width: 1140px;
     box-sizing: border-box;
+}
+
+.doc__footer{
+    background-color: #FFFFFF;
+    display: table;
+    width: 1140px;
+    margin: 0px auto;
+    font-size: 14px;
+
+    a{
+        text-decoration: none;
+        color: var(--color-dark-primary);
+    }
+
+    > ul > li{
+        float: left;
+        padding: 30px 0px;
+        margin-left: 20px;
+    }
+
+    .footer__copyright{
+        float: right;
+        img {
+            width: 70px;
+            height: 70px;
+            margin: 20px 0px 0px 20px;
+        }
+    }
+
+    h1{
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    .footer__infos{
+        display: flex;
+        padding-top: 10px;
+
+        > div {
+            width: 350px;
+        }
+
+        p{
+            color: var(--color-dark-primary);
+        }
+
+        > ul > li {
+            margin: 10px 0px;
+        }
+    }
+
 }
