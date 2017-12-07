@@ -15,6 +15,7 @@ module.exports = {
                 component: 'c'
             }
         }),
+        require('postcss-utils'),
         require('postcss-css-reset'),
         require('postcss-shape'),
         require('postcss-nested')
