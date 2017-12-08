@@ -15,9 +15,11 @@ module.exports = {
                 component: 'c'
             }
         }),
+        require('precss'),
         require('postcss-utils'),
         require('postcss-css-reset'),
         require('postcss-shape'),
-        require('postcss-nested')
+        require('postcss-nested'),
+        require('postcss-calc')
     ]
 }
