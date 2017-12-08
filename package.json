@@ -22,6 +22,7 @@
     "postcss-css-reset": "^1.0.2",
     "postcss-nested": "^2.1.2",
     "postcss-partial-import": "^4.1.0",
+    "postcss-sass-color-functions": "^1.1.0",
     "postcss-shape": "0.0.1",
     "postcss-url": "^7.3.0",
     "postcss-utils": "^1.0.2",

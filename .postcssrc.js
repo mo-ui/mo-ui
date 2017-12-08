@@ -20,6 +20,7 @@ module.exports = {
         require('postcss-css-reset'),
         require('postcss-shape'),
         require('postcss-nested'),
-        require('postcss-calc')
+        require('postcss-calc'),
+        require('postcss-sass-color-functions')
     ]
 }
