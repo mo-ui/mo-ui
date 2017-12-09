@@ -10,8 +10,10 @@
     "unit": "jest test/unit/specs --coverage",
     "unit:watch": "jest test/unit/specs --coverage --watch",
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs",
+    "release": "webpack --config build/webpack.release.conf.js && webpack -p --config build/webpack.release.conf.min.js",
     "build": "node build/build.js"
   },
+  "main": "bundle/main.min.js",
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
     "highlight.js": "^9.12.0",
