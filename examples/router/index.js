@@ -12,7 +12,7 @@ function dealwithChildren (children) {
 
     children.forEach((child) => {
         if (child.children) {
-            dealwithChildren(child.children);
+            szRoutes = szRoutes.concat(dealwithChildren(child.children));
         } else {
             szRoutes.push({
                 alias: child.alias,
@@ -30,7 +30,6 @@ map.forEach((item) => {
         component: r => require.ensure([], () => r(require(`../components/${item.component}`))),
         children: dealwithChildren(item.children)
     });
-    // item.component = r => require.ensure([], () => r(require(`../docs/${item.component}.md`)))
 });
 console.log(routes);
 export default new Router({

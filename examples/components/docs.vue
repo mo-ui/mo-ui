@@ -9,7 +9,10 @@
                           <li v-else>
                               <div class="docs__navigation__item--no-choose">{{item.alias}}</div>
                               <ul>
-                                  <li class="docs__navigation__item--secend" v-for="component in item.children">{{component.alias}}</li>
+                                  <!-- <li class="docs__navigation__item--secend" v-for="component in item.children">{{component.alias}}</li> -->
+                                  <template v-for="component in item.children">
+                                      <router-link class="docs__navigation__item--secend" tag="li" :to="getCurrentRouteMap.path + '/' + component.name">{{component.alias}}</router-link>
+                                  </template>
                               </ul>
                           </li>
                       </template>
@@ -57,9 +60,8 @@ export default {
 }
 
 .docs__navigation__item{
-    &--first, &--no-choose{
+    &--first, &--no-choose, &--secend{
         white-space: nowrap;
-        padding-left: 25px;
         padding-top: 15px;
         padding-bottom: 15px;
         color: var(--color-background-color);
@@ -70,12 +72,20 @@ export default {
         font-weight: bold;
     }
 
-    &--first{
+    &--first, &--secend{
         cursor: pointer;
 
         &:hover{
             color: var(--color-primary);
         }
+    }
+
+    &--first, &--no-choose {
+        padding-left: 25px;
+    }
+
+    &--secend{
+        padding-left: 40px;
     }
 }
 
