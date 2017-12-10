@@ -7,7 +7,7 @@ Vue.use(Router)
 let routes = [];
 
 function dealwithChildren (children) {
-    if(!children) return;
+    if (!children) return;
     let szRoutes = [];
 
     children.forEach((child) => {
