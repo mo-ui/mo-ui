@@ -47,4 +47,4 @@ commit 遵循 [angular](https://github.com/angular/angular.js/blob/master/CONTRI
 
 ## LICENSE
 
-MIT
+[MIT](https://opensource.org/licenses/MIT)
