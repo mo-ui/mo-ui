@@ -1,0 +1,41 @@
+[
+    {
+        "path": "/docs/guide",
+        "name": "guide",
+        "component": "docs",
+        "children": [
+            {
+                "name": "introduce",
+                "alias": "介绍"
+            },
+            {
+                "name": "standard",
+                "alias": "参与贡献"
+            }
+        ]
+    },
+    {
+        "path": "/docs/component",
+        "name": "components",
+        "component": "docs",
+        "children": [
+            {
+                "name": "installation",
+                "alias": "安装"
+            },
+            {
+                "name": "quickstart",
+                "alias": "快速上手"
+            },
+            {
+                "alias": "组件",
+                "children": [
+                    {
+                        "name": "color",
+                        "alias": "色彩"
+                    }
+                ]
+            }
+        ]
+    }
+]
