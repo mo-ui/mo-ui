@@ -9,6 +9,9 @@ module.exports = {
         library: 'MoUi',
         libraryTarget: 'umd'
     },
+    resolve: {
+        extensions: ['.js', '.vue', '.json'],
+    },
     module: {
         rules: [
             {
