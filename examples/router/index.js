@@ -1,25 +1,38 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import map from './routeMap.json'
 
 Vue.use(Router)
 
-export default new Router({
-    routes: [
-        {
-            path: '/',
-            name: 'HelloWorld',
-            component: HelloWorld
-        },
-        {
-            path: '/docs/guide',
-            name: 'guide',
-            component: r => require.ensure([], () => r(require('../components/guide.vue')))
-        },
-        {
-            path: '/docs/component',
-            name: 'component',
-            component: r => require.ensure([], () => r(require('../components/component.vue')))
+let routes = [];
+
+function dealwithChildren (children) {
+    if (!children) return;
+    let szRoutes = [];
+
+    children.forEach((child) => {
+        if (child.children) {
+            szRoutes = szRoutes.concat(dealwithChildren(child.children));
+        } else {
+            szRoutes.push({
+                alias: child.alias,
+                path: child.name,
+                component: r => require.ensure([], () => r(require(`../docs/${child.name}.md`)))
+            });
         }
-    ]
+    });
+    return szRoutes;
+}
+
+map.forEach((item) => {
+    routes.push({
+        path: item.path,
+        component: r => require.ensure([], () => r(require(`../components/${item.component}`))),
+        children: dealwithChildren(item.children)
+    });
+});
+console.log(routes);
+export default new Router({
+    mode: 'hash',
+    routes: routes
 })

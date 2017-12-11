@@ -1,26 +1,3 @@
-# MO-UI
-
-> A Component Library for Vue.js.
-
-## 关于
-
-MO-UI 是一套基于 Vue.js 2.0 的组件库，主要服务于 PC 界面的中后台产品。
-
-<br>
-
-## 搭建开发环境
-
-```bash
-git clone git@github.com:mo-ui/mo-ui.git
-cd mo-ui
-npm install
-npm run dev
-
-## open localhost:8080
-```
-
-<br>
-
 ## 参与贡献
 
 贡献代码请按照规范。
@@ -44,7 +21,3 @@ commit 遵循 [angular](https://github.com/angular/angular.js/blob/master/CONTRI
 ## 免责声明
 
 该组件库目前旨在供开发者学习使用，不做任何商业用途。
-
-## LICENSE
-
-[MIT](https://opensource.org/licenses/MIT)

@@ -1,13 +1,16 @@
 import Button from './components/button/index';
+import Row from './components/row/index';
+import Col from './components/col/index';
 
 const components = [
-    Button
+    Button,
+    Row,
+    Col
 ];
 
 const install = function (Vue) {
     if (install.installed) return;
     components.map((component) => {
-        // console.log(component);
         Vue.component(component.name, component);
     });
 };

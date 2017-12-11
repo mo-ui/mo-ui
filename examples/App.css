@@ -27,6 +27,10 @@
             font-size: 25px;
         }
     }
+    li.router-link-active{
+        color: var(--color-dark-primary);
+        border-bottom: 2px solid var(--color-dark-primary);
+    }
 
     ul{
         float: right;
@@ -44,10 +48,6 @@
         &:hover{
             color: var(--color-dark-primary);
         }
-        &--choose{
-            color: var(--color-dark-primary);
-            border-bottom: 2px solid var(--color-dark-primary);
-        }
     }
 
     p{
@@ -58,7 +58,7 @@
 }
 
 .doc__body{
-    margin: 0px auto;
+    margin: 30px auto;
     width: 1140px;
     box-sizing: border-box;
 }

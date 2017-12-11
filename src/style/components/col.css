@@ -1,0 +1,115 @@
+@import "../common/var.css";
+
+.mo-col-1, .mo-col-2, .mo-col-3, .mo-col-4, .mo-col-5, .mo-col-6, .mo-col-7, .mo-col-8, .mo-col-9, .mo-col-10, .mo-col-11, .mo-col-12, .mo-col-13, .mo-col-14, .mo-col-15, .mo-col-16, .mo-col-17, .mo-col-18, .mo-col-19, .mo-col-20, .mo-col-21, .mo-col-22, .mo-col-23, .mo-col-24 {
+    float: left;
+    box-sizing: border-box;
+}
+.mo-col-0 {
+    width: 0;
+}
+
+@for $i from 0 to 24 {
+    .mo-col-$i {
+        width: calc(1 / 24 * $(i) * 100)%;
+    }
+    .mo-col-order-$i {
+        order: $i;
+    }
+    .mo-col-offset-$i {
+        margin-left: calc(1 / 24 * $(i) * 100)%;
+    }
+    .mo-col-pull-$i {
+        position: relative;
+        right: calc(1 / 24 * $(i) * 100)%;
+    }
+    .mo-col-push-$i {
+        position: relative;
+        left: calc(1 / 24 * $(i) * 100)%;
+    }
+}
+
+@media (max-width: 768px) {
+    @for $i from 0 to 24 {
+        .mo-col-xs-$i {
+            width: calc(1 / 24 * $(i) * 100)%;
+        }
+        .mo-col-xs-order-$i {
+            order: $i;
+        }
+        .mo-col-xs-offset-$i {
+            margin-left: calc(1 / 24 * $(i) * 100)%;
+        }
+        .mo-col-xs-pull-$i {
+            position: relative;
+            right: calc(1 / 24 * $(i) * 100)%;
+        }
+        .mo-col-xs-push-$i {
+            position: relative;
+            left: calc(1 / 24 * $(i) * 100)%;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    @for $i from 0 to 24 {
+        .mo-col-sm-$i {
+            width: calc(1 / 24 * $(i) * 100)%;
+        }
+        .mo-col-sm-order-$i {
+            order: $i;
+        }
+        .mo-col-sm-offset-$i {
+            margin-left: calc(1 / 24 * $(i) * 100)%;
+        }
+        .mo-col-sm-pull-$i {
+            position: relative;
+            right: calc(1 / 24 * $(i) * 100)%;
+        }
+        .mo-col-sm-push-$i {
+            position: relative;
+            left: calc(1 / 24 * $(i) * 100)%;
+        }
+    }
+}
+@media (min-width: 992px) {
+    @for $i from 0 to 24 {
+        .mo-col-md-$i {
+            width: calc(1 / 24 * $(i) * 100)%;
+        }
+        .mo-col-md-order-$i {
+            order: $i;
+        }
+        .mo-col-md-offset-$i {
+            margin-left: calc(1 / 24 * $(i) * 100)%;
+        }
+        .mo-col-md-pull-$i {
+            position: relative;
+            right: calc(1 / 24 * $(i) * 100)%;
+        }
+        .mo-col-md-push-$i {
+            position: relative;
+            left: calc(1 / 24 * $(i) * 100)%;
+        }
+    }
+}
+@media (min-width: 1200px) {
+    @for $i from 0 to 24 {
+        .mo-col-lg-$i {
+            width: calc(1 / 24 * $(i) * 100)%;
+        }
+        .mo-col-lg-order-$i {
+            order: $i;
+        }
+        .mo-col-lg-offset-$i {
+            margin-left: calc(1 / 24 * $(i) * 100)%;
+        }
+        .mo-col-lg-pull-$i {
+            position: relative;
+            right: calc(1 / 24 * $(i) * 100)%;
+        }
+        .mo-col-lg-push-$i {
+            position: relative;
+            left: calc(1 / 24 * $(i) * 100)%;
+        }
+    }
+}

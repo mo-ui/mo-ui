@@ -3,8 +3,8 @@
     <div class="doc__head">
         <p>version: {{version}}</p>
         <ul>
-            <router-link :class="{'docs-link--choose': $route.name === 'guide'}" to="/docs/guide" tag="li" class="docs-link">指南</router-link>
-            <router-link :class="{'docs-link--choose': $route.name === 'component'}" to="/docs/component" tag="li" class="docs-link">组件</router-link>
+            <router-link to='/docs/guide/introduce' tag="li" class="docs-link">指南</router-link>
+            <router-link to="/docs/component/installation" tag="li" class="docs-link">组件</router-link>
         </ul>
         <h1>
             <img src="https://i.loli.net/2017/12/04/5a251cd8089e2.png" />
@@ -57,6 +57,7 @@
 
 <script>
 import pack from '../package.json';
+
 export default {
     name: 'app',
     data () {

@@ -1,5 +1,4 @@
 @import "./common/var.css";
-
-html {
-    background: var(--color-primary);
-}
+@import "./components/button.css";
+@import "./components/row.css";
+@import "./components/col.css";
