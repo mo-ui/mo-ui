@@ -1,0 +1,17 @@
+test/
+dist/
+docs/
+example/
+static/
+config/
+node_modules/
+build/
+.babelrc
+.eslintrc
+.gitattributes
+.editorconfig
+.gitignore
+*.log
+.tmp
+.DS_Store
+.idea
