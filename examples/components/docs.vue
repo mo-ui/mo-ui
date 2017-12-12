@@ -64,7 +64,7 @@ export default {
         white-space: nowrap;
         padding-top: 15px;
         padding-bottom: 15px;
-        color: var(--color-background-color);
+        color: var(--color-base-black);
     }
 
     &--no-choose{

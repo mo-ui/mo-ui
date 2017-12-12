@@ -10,15 +10,13 @@
 
     /* Colors
     -------------------------- */
-    --color-background-color: #777777;
     --color-primary: #7FCFFB;
-    --color-dark-primary: rgb(99, 167, 226);
+    --color-dark-primary: #559CE0;
 
-    --color-success: #1DBF6E;
-    --color-warning: #F90;
-    --color-info: #4DA6FF;
-    --color-danger: #FF4040;
-    --color-link: #007FFF;
+    --color-success: #00DC5D;
+    --color-warning: #EE9000;
+    --color-info: #90969c;
+    --color-danger: #EC1101;
 
     --color-black: #000000;
     --color-white: #FFFFFF;
@@ -26,6 +24,17 @@
     --color-base-gray: #BFBFBF;
     --color-light-gray: #D9D9D9;
     --color-extra-light-gray: #F9F9F9;
+    --color-base-black: #777777;
+
+    --color-text-primary: #2d2f33;
+    --color-text-regular: #5a5e66;
+    --color-text-secondary: #878d99;
+    --color-text-placeholder: #b4bccc;
+
+    --border-color-base: #d8dce5;
+    --border-color-light: #dfe4ed;
+    --border-color-lighter: #e6ebf5;
+    --border-color-extra-light: #edf2fc;
 
     /* Font
     -------------------------- */
