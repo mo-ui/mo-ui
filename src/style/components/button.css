@@ -1,0 +1,10 @@
+@import "../common/var.css";
+@import "../mixins/button.css";
+
+@c button {
+    @mixin btn-default;
+
+    @m long{
+        width: 100%;
+    }
+}

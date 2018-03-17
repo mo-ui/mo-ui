@@ -33,6 +33,10 @@
                     {
                         "name": "color",
                         "alias": "色彩"
+                    },
+                    {
+                        "name": "button",
+                        "alias": "按钮"
                     }
                 ]
             }

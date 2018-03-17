@@ -1,0 +1,14 @@
+
+@define-mixin button-color $color, $background, $border {
+    color: $color;
+    background-color: $background;
+    border-color: $border;
+}
+
+@define-mixin btn-primary {
+    @mixin button-variant white, var(--color-dark-primary), var(--color-dark-primary);
+}
+
+@define-mixin btn-default {
+
+}
