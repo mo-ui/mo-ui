@@ -5,7 +5,7 @@
 </template>
 
 <script>
-const prefixCls = 'mo-row';
+const PrefixOfClass = 'mo-row';
 
 export default {
     name: 'MoRow',
