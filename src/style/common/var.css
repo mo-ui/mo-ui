@@ -50,4 +50,8 @@
     --border-radius-base: 4px;
     --border-radius-small: 2px;
     --border-radius-circle: 100%;
+
+    /* typography
+    -------------------------- */
+    --line-height-base: 1.42858;
 }

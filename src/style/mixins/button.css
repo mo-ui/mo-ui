@@ -1,3 +1,16 @@
+@define-mixin button-default {
+    display: inline-block;
+    width: 100%;
+    padding: 4px 12px;
+    text-align: center;
+    vartical-align: middle;
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+    border: var(--border-width-base) var(--border-style-base) var(--border-color-base);
+    border-radius: var(--border-radius-base);
+    cursor: pointer;
+    outline: none;
+}
 
 @define-mixin button-color $color, $background, $border {
     color: $color;
@@ -5,10 +18,4 @@
     border-color: $border;
 }
 
-@define-mixin btn-primary {
-    @mixin button-variant white, var(--color-dark-primary), var(--color-dark-primary);
-}
 
-@define-mixin btn-default {
-
-}
