@@ -2,23 +2,21 @@
 @import "../mixins/alert.css";
 
 @c alert {
+    @mixin alert-default;
+
     @m info {
-        @mixin alert-default;
         @mixin alert-color var(--color-info), var(--alert-info-color);
     }
 
     @m success {
-        @mixin alert-default;
         @mixin alert-color var(--color-success), var(--alert-success-color);
     }
 
     @m warning {
-        @mixin alert-default;
         @mixin alert-color var(--color-warning), var(--alert-warning-color);
     }
 
     @m danger {
-        @mixin alert-default;
         @mixin alert-color var(--color-danger), var(--alert-danger-color);
     }
 
