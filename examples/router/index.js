@@ -31,7 +31,7 @@ map.forEach((item) => {
         children: dealwithChildren(item.children)
     });
 });
-console.log(routes);
+
 export default new Router({
     mode: 'hash',
     routes: routes

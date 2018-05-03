@@ -1,2 +1,44 @@
 @import "../common/var.css";
+@import "../mixins/alert.css";
 
+@c alert {
+    @m info {
+        @mixin alert-default;
+        @mixin alert-color var(--color-info), var(--alert-info-color);
+    }
+
+    @m success {
+        @mixin alert-default;
+        @mixin alert-color var(--color-success), var(--alert-success-color);
+    }
+
+    @m warning {
+        @mixin alert-default;
+        @mixin alert-color var(--color-warning), var(--alert-warning-color);
+    }
+
+    @m danger {
+        @mixin alert-default;
+        @mixin alert-color var(--color-danger), var(--alert-danger-color);
+    }
+
+    @m content {
+        display: table-cell;
+        padding: 0 8px;
+    }
+
+    @m title {
+        font-size: var(--alert-title-font-size);
+        line-height: 18px;
+    }
+
+    @m closebtn {
+        font-size: var(--alert-title-font-size);
+        color: var(--color-text-placeholder);
+        opacity: 1;
+        position: absolute;
+        top: 12px;
+        right: 20px;
+        cursor: pointer;
+    }
+}

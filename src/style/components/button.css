@@ -6,19 +6,31 @@
     @m default {
         @mixin button-default;
         @mixin button-color var(--color-black), var(--color-white), var(--color-base-gray);
+        &:hover, &:focus {
+            @mixin button-color var(--color-black), var(--color-light-default), var(--color-base-gray);
+        }
+        &:active {
+            @mixin button-color var(--color-black), var(--color-white), var(--color-base-gray);
+        }
     }
 
     @m info {
         @mixin button-default;
         @mixin button-color var(--color-white), var(--color-info), var(--color-info);
+        &:hover, &:focus {
+            @mixin button-color var(--color-white), var(--color-light-info), var(--color-light-info);
+        }
+        &:active {
+            @mixin button-color var(--color-white), var(--color-info), var(--color-info);
+        }
     }
 
     @m primary {
         @mixin button-default;
         @mixin button-color var(--color-white), var(--color-dark-primary), var(--color-dark-primary);
-        &:hover {
+        &:hover, &:focus {
             @mixin button-color var(--color-white), var(--color-primary), var(--color-primary);
-        };
+        }
         &:active {
             @mixin button-color var(--color-white), var(--color-dark-primary), var(--color-dark-primary);
         }
@@ -27,15 +39,33 @@
     @m success {
         @mixin button-default;
         @mixin button-color var(--color-white), var(--color-success), var(--color-success);
+        &:hover, &:focus {
+            @mixin button-color var(--color-white), var(--color-light-success), var(--color-light-success);
+        }
+        &:active {
+            @mixin button-color var(--color-white), var(--color-success), var(--color-success);
+        }
     }
 
     @m warning {
         @mixin button-default;
         @mixin button-color var(--color-white), var(--color-warning), var(--color-warning);
+        &:hover, &:focus {
+            @mixin button-color var(--color-white), var(--color-light-warning), var(--color-light-warning);
+        }
+        &:active {
+            @mixin button-color var(--color-white), var(--color-warning), var(--color-warning);
+        }
     }
 
     @m danger {
         @mixin button-default;
         @mixin button-color var(--color-white), var(--color-danger), var(--color-danger);
+        &:hover, &:focus {
+            @mixin button-color var(--color-white), var(--color-light-danger), var(--color-light-danger);
+        }
+        &:active {
+            @mixin button-color var(--color-white), var(--color-danger), var(--color-danger);
+        }
     }
 }
