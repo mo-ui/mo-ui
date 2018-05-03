@@ -33,7 +33,6 @@ export default {
     computed: {
         classes () {
             return [
-                `${PrefixOfClass}`,
                 `${PrefixOfClass}--${this.type}`
             ];
         }
