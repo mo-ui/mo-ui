@@ -18,7 +18,12 @@ export default {
                 return (['button', 'submit', 'reset'].indexOf(value) >= 0);
             }
         },
-        long: Boolean
+        type: {
+            default: 'default',
+            validator (value) {
+                return (['default', 'info', 'primary', 'success', 'warning', 'danger'].indexOf(value) >= 0)
+            }
+        }
     },
     methods: {
         handleClick (event) {
@@ -29,9 +34,7 @@ export default {
         classes () {
             return [
                 `${PrefixOfClass}`,
-                {
-                    [`${PrefixOfClass}--long`]: this.long
-                }
+                `${PrefixOfClass}--${this.type}`
             ];
         }
     }

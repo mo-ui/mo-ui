@@ -1,0 +1,19 @@
+@define-mixin alert-default {
+    width: 100%;
+    padding: var(--alert-padding);
+    margin: 0;
+    box-sizing: border-box;
+    border-radius: var(--alert-border-radius);
+    position: relative;
+    background-color: var(--color-white);
+    overflow: hidden;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    transition: opacity .2s;
+}
+
+@define-mixin alert-color $color, $background {
+    color: $color;
+    background-color: $background;
+}

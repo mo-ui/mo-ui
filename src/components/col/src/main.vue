@@ -5,7 +5,7 @@
 </template>
 
 <script>
-const prefixCls = 'mo-col';
+const PrefixOfClass = 'mo-col';
 
 export default {
     name: 'MoCol',
@@ -33,26 +33,26 @@ export default {
         },
         classes () {
             let classList = [
-                `${prefixCls}`,
+                `${PrefixOfClass}`,
                 {
-                    [`${prefixCls}-${this.span}`]: this.span,
-                    [`${prefixCls}-order-${this.order}`]: this.order,
-                    [`${prefixCls}-offset-${this.offset}`]: this.offset,
-                    [`${prefixCls}-push-${this.push}`]: this.push,
-                    [`${prefixCls}-pull-${this.pull}`]: this.pull
+                    [`${PrefixOfClass}-${this.span}`]: this.span,
+                    [`${PrefixOfClass}-order-${this.order}`]: this.order,
+                    [`${PrefixOfClass}-offset-${this.offset}`]: this.offset,
+                    [`${PrefixOfClass}-push-${this.push}`]: this.push,
+                    [`${PrefixOfClass}-pull-${this.pull}`]: this.pull
                 }
             ];
 
             ['xs', 'sm', 'md', 'lg'].forEach((size) => {
                 if (typeof this[size] === 'number') {
-                    classList.push(`${prefixCls}-${size}-${this[size]}`);
+                    classList.push(`${PrefixOfClass}-${size}-${this[size]}`);
                 } else if (typeof this[size] === 'object') {
                     let props = this[size];
                     Object.keys(props).forEach((prop) => {
                         classList.push(
                             prop !== 'span'
-                                ? `${prefixCls}-${size}-${prop}-${props[prop]}`
-                                : `${prefixCls}-${size}-${props[prop]}`
+                                ? `${PrefixOfClass}-${size}-${prop}-${props[prop]}`
+                                : `${PrefixOfClass}-${size}-${props[prop]}`
                         );
                     });
                 }

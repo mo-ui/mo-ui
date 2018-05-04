@@ -37,6 +37,10 @@
                     {
                         "name": "button",
                         "alias": "按钮"
+                    },
+                    {
+                        "name": "alert",
+                        "alias": "警告"
                     }
                 ]
             }
