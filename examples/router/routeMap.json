@@ -39,6 +39,10 @@
                         "alias": "按钮"
                     },
                     {
+                        "name": "input",
+                        "alias": "输入框"
+                    },
+                    {
                         "name": "alert",
                         "alias": "警告"
                     }

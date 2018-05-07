@@ -5,7 +5,6 @@
 </template>
 
 <script>
-
 const PrefixOfClass = 'mo-button';
 
 export default {
@@ -23,6 +22,12 @@ export default {
             validator (value) {
                 return (['default', 'info', 'primary', 'success', 'warning', 'danger'].indexOf(value) >= 0)
             }
+        },
+        size: {
+            default: 'md',
+            validator (value) {
+                return (['lg', 'md', 'sm'].indexOf(value) >= 0)
+            }
         }
     },
     methods: {
@@ -34,7 +39,9 @@ export default {
         classes () {
             return [
                 `${PrefixOfClass}`,
-                `${PrefixOfClass}--${this.type}`
+                `${PrefixOfClass}--${this.type}`,
+                `${PrefixOfClass}--${this.size}`,
+                this.disabled ? `${PrefixOfClass}--disabled` : ''
             ];
         }
     }

@@ -34,6 +34,14 @@
                             <p>Email: ever-lose@foxmail.com</p>
                         </div>
                     </div>
+                    <div>
+                        <img src="https://avatars0.githubusercontent.com/u/29188938?s=40&v=4" />
+                        <div>
+                            <p>author: catchonme</p>
+                            <p>github: <a target="_blank" href="https://github.com/catchonme">https://github.com/catchonme</a></p>
+                            <p>Email: izengdp@163.com</p>
+                        </div>
+                    </div>
                 </div>
             </li>
             <li>
