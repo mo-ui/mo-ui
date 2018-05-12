@@ -45,6 +45,7 @@
     /* Font
     -------------------------- */
     --font-size-base: 14px;
+    --font-weight-base: 300;
 
     /* Border
     -------------------------- */
@@ -57,11 +58,11 @@
     --border-radius-small: 2px;
     --border-radius-circle: 100%;
 
-    /* typography
+    /* Typography
     -------------------------- */
     --line-height-base: 1.42858;
 
-    /* alert
+    /* Alert
     -------------------------- */
     --alert-padding: 8px 16px;
     --alert-border-radius: var(--border-radius-base);
@@ -70,4 +71,39 @@
     --alert-success-color:#F0F9EB;
     --alert-warning-color:#FDF6EC;
     --alert-danger-color:#FEF0F0;
+
+    /* Button
+    -------------------------- */
+    --button-font-size: 14px;
+    --button-font-weight: var(--font-weight-base);
+    --button-border-radius: var(--border-radius-base);
+    --button-padding-vertical: 12px;
+    --button-padding-horizontal: 20px;
+
+    --button-large-font-size: 16px;
+    --button-large-border-radius: var(--border-radius-base) + 1;
+    --button-large-height: 50px;
+    --button-large-line-height: 50px;
+
+    --button-medium-font-size: 14px;
+    --button-medium-border-radius: var(--border-radius-base);
+    --button-medium-height: 40px;
+    --button-medium-line-height: 40px;
+
+    --button-small-font-size: 12px;
+    --button-small-border-radius: var(--border-radius-base) - 1;
+    --button-small-height: 30px;
+    --button-small-line-height: 30px;
+
+    --button-disabled-color: #ccc;
+    --button-disabled-background-color: var(--color-white);
+    --button-disabled-border-color: var(--border-color-lighter);
+
+    /* Input
+    -------------------------- */
+    --input-background-color: var(--color-white);
+    --input-border-radius: var(--border-radius-base);
+    --input-border: var(--border-base);
+    --input-width: 140px;
+    --input-height: 40px;
 }

@@ -1,0 +1,29 @@
+@import "../common/var.css";
+
+@c input {
+    position: relative;
+    font-size: var(--font-size-base);
+    display: inline-block;
+    width: 100%;
+
+    @m inner {
+        box-sizing: border-box;
+        letter-spacing: 1px;
+        -webkit-appearance: none;
+        background-color: var(--input-background-color);
+        background-image: none;
+        border-radius: var(--input-border-radius);
+        border: var(--input-border);
+        height: var(--input-height);
+        line-height: var(--input-height);
+        outline: none;
+        width: 100%;
+        padding: 0 15px;
+        transition: var(--border-transition-base);
+
+        &:focus {
+             outline: none;
+             border-color: var(--color-dark-primary);
+         }
+    }
+}

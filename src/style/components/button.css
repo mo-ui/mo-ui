@@ -63,4 +63,38 @@
             @mixin button-color var(--color-white), var(--color-danger), var(--color-danger);
         }
     }
+
+    @m lg {
+        font-size: var(--button-large-font-size);
+        border-radius: var(--button-large-border-radius);
+        height: var(--button-large-height);
+        line-height: var(--button-large-line-height);
+    }
+
+    @m md {
+        font-size: var(--button-medium-font-size);
+        border-radius: var(--button-medium-border-radius);
+        height: var(--button-medium-height);
+        line-height: var(--button-medium-line-height);
+    }
+
+    @m sm {
+        font-size: var(--button-small-font-size);
+        border-radius: var(--button-small-border-radius);
+        height: var(--button-small-height);
+        line-height: var(--button-small-line-height);
+    }
+
+    /* 鼠标 hover 还有问题 */
+    @m disabled {
+        &,
+        &:hover,
+        &:focus {
+            color: var(--button-disabled-color);
+            cursor: not-allowed;
+            background-image: none;
+            border-color: var(--button-disabled-border-color);
+            opacity: .7;
+         }
+    }
 }
